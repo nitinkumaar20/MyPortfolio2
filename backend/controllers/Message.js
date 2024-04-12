@@ -1,0 +1,83 @@
+import { messageModel}  from "../Models/Message.js";
+import nodemailer from 'nodemailer'
+import { isRequired } from "../middleware/fieldMiddleware.js";
+const ownerEmail = 'nk999549@gmail.com'
+ 
+// , [
+//   "email",
+//   "phone",
+//   "Fname",
+//   "Lname",
+//   "message",
+// ]);
+export const Message = async (req, res) => {
+    try {
+      const { email,phone, Fname,Lname,message } = req.body
+      let user = await messageModel.findOne({ email: email });
+      if (user) {
+        return res.status(400).json({ error: "already sent message" });
+      }
+  
+   
+  
+      user = await messageModel.create({
+         email,
+        phone,
+        Fname,
+    Lname,
+        message,
+      });
+  
+  
+  
+      res.json({ result:true,message:"message sent successful"});
+      
+  
+      /////////////////////////// sending mail to the user ////////////////////////////////////////////////////////////
+  
+      if (user) {
+        const transporter = nodemailer.createTransport({
+          service: "gmail",
+          auth: {
+            user: "nk999549@gmail.com",
+            pass: "mqitkvdjuzrzwago",
+          },
+        });
+  
+        async function main() {
+          const info = await transporter.sendMail({
+            from: "<nk999549@gmail.com>",
+            to: ownerEmail,
+            subject: "Client Message",
+  
+            html: `<div style={{border: 2px solid:black}}>
+                        
+              
+                        <h2>You Recieve Message from ${Fname}</h2>
+                        
+                        <h2>
+                        <br>
+                        Client Details
+                        <br>
+                        Client Name : ${Fname + Lname}
+                        <br>
+                        Client Email: ${email}
+                        <br>
+                        Client Phone no.: ${phone}
+                        </h2>
+                        <h2>${message}</h2>
+                        
+                      </div>`,
+          });
+  
+          console.log("Message sent");
+        }
+  
+        main().catch(console.error);
+      }
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ error: "Internal Server error" });
+    }
+  };
+  
