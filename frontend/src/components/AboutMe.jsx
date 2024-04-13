@@ -49,7 +49,7 @@ const AboutMe = () => {
             alt="Error"
             />
         </div>
-        <div className="col-md-6" style={{justifyContent:'center',display:'flex',alignContent:'center'}}>
+        <div className="col-md-6 text-div" style={{justifyContent:'center',display:'flex',alignContent:'center'}}>
           <div className="py-md-5 px-0 ">
 
           <h3 style={{fontSize:'3rem',lineHeight:'1rem'}}>LET’S</h3>
