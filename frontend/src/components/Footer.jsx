@@ -23,9 +23,9 @@ const Footer = () => {
     </div>
 </div>
 
-<div className='col-md-3'>
+<div className='col-md-3 quick-link'>
 <ul style={{fontSize:'2.4rem',display:'flex',flexDirection:'column',gap:'1rem',color:'white'}}>
-  <h4 style={{color:'black'}}>Quick Links</h4>
+  <h4 style={{color:'red'}}>Quick Links</h4>
         <a href="#section-one" className='foter-nav-effect' style={{listStyle:'none',textDecoration:'none',color:'black'}}>Home</a>
         <a href="#section-2" className='foter-nav-effect' style={{listStyle:'none',textDecoration:'none',color:'black'}}>About</a>
         <a href="#section-3" className='foter-nav-effect' style={{listStyle:'none',textDecoration:'none',color:'black'}}>Services</a>
@@ -38,7 +38,7 @@ const Footer = () => {
 
 <div className='col-md-3'>
 <ul style={{fontSize:'2.4rem',display:'flex',flexDirection:'column',gap:'1rem',color:'white'}}>
-  <h4 style={{color:'black'}}>Our Services</h4>
+  <h4 style={{color:'red'}}>Our Services</h4>
         <a href="#contact" className='foter-nav-effect' style={{listStyle:'none',textDecoration:'none',color:'black'}}>Web Designing & Development</a>
         <a href="#contact" className='foter-nav-effect' style={{listStyle:'none',textDecoration:'none',color:'black'}}>Photoshop Editing</a>
         <a href="#contact" className='foter-nav-effect' style={{listStyle:'none',textDecoration:'none',color:'black'}}>Graphic Designing</a>

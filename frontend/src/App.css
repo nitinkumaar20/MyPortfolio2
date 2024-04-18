@@ -1,65 +1,59 @@
 /* ////////////////////////// responsive css here //////////////////////////////////////////// */
 
-@media only screen and (max-width: 1024px){
-    html{
-        font-size: 48%;
-    }
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 48%;
+  }
 
-    #section-one #rightbox img{
+  #section-one #rightbox img {
     max-width: 49rem;
     max-height: 55rem;
-    }
+  }
 
- 
-      #section-one #leftbox p{
-        min-width: 30rem;
-      }
+  #section-one #leftbox p {
+    min-width: 30rem;
+  }
 }
 
-
-
-@media only screen and (max-width: 769px){
-  html{
-      font-size: 30%;
+@media only screen and (max-width: 769px) {
+  html {
+    font-size: 29%;
   }
-
-
-    #section-one #rightbox img {
-      max-width: 29rem;
-      max-height: 30rem;
+  #section-one{
+    padding: 0 20rem;
   }
-  #section-2 .img-dev img{
+  header{
+   /* padding: 0 40rem; */
+    /* background-color: aqua; */
+  }
+  #section-one #rightbox img {
+    max-width: 29rem;
+    max-height: 30rem;
+  }
+  #section-2 .img-dev img {
     max-width: 49rem;
   }
-  #section-2{
+  #section-2 {
     padding: 0 19rem;
   }
-  #section-2 .text-div{
-
-margin-top: 3rem;
+  #section-2 .text-div {
+    margin-top: 3rem;
   }
 
- #section-3 .services-box{
-  display: flex;
-flex-direction: column;
-justify-content: center;
-
+  #section-3 .services-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  #section-one{
-      flex-direction: column;
-   overflow:hidden;
-   
+  #section-one {
+    flex-direction: column;
+    overflow: hidden;
   }
-
 }
 
-
-
-@media only screen and (max-width: 481px){
-  html{
-      font-size: 25%;
+@media only screen and (max-width: 481px) {
+  html {
+    font-size: 25%;
   }
-
-
 }
