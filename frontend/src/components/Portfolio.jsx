@@ -39,7 +39,7 @@ const Portfolio = () => {
 
     alt="error"
   />
-  <h3 className="prev" style={{cursor:'pointer',objectFit:'cover'}}><a  href="https://nitinkumaar20.github.io/Quiz.github.io/" target="_port" style={{textDecoration:'none',color:'white',fontSize:'2rem'}}>Preview</a></h3>
+ <a  href="https://nitinkumaar20.github.io/Quiz.github.io/" target="_port" style={{textDecoration:'none',color:'white',fontSize:'2rem'}}> <h3 className="prev h1" style={{cursor:'pointer',objectFit:'cover',display:'flex',flexDirection:'column'}}><p className="text-danger h1">Quiz App</p> Preview</h3></a>
 </div>
 <div className="main "  >
   <img
@@ -50,8 +50,8 @@ const Portfolio = () => {
 
     alt="error"
   />
-  <h3 className="prev" style={{cursor:'pointer',display:"flex",flexDirection:'column'}}>
-    <h3>Student Registartion portal</h3><a href="https://github.com/nitinkumaar20/Student-Registration-Portal" target="_port" style={{textDecoration:'none',color:'red',fontSize:'2rem'}}>Preview</a></h3>
+  
+    <a href="https://github.com/nitinkumaar20/Student-Registration-Portal" target="_port" style={{textDecoration:'none',color:'red',fontSize:'2rem'}}><h3 className="prev h1" style={{cursor:'pointer',display:"flex",flexDirection:'column'}}><p className="text-danger h1">Student Registartion portal</p>Preview</h3></a>
 </div>
 <div className="main" >
   <img
@@ -60,7 +60,7 @@ const Portfolio = () => {
     alt="error"
   />
 
-  <h3 className="prev" style={{cursor:'pointer'}}><a  href="https://nitinkumaar20.github.io/text_editor/" target="_port" style={{textDecoration:'none',color:'white',fontSize:'2rem'}}>Preview</a></h3>
+ <a  href="https://nitinkumaar20.github.io/text_editor/" target="_port" style={{textDecoration:'none',color:'white',fontSize:'2rem'}}> <h3 className="prev h1" style={{cursor:'pointer',display:'flex',flexDirection:'column'}}> <p className="text-danger h1">Text Editor</p> Preview</h3></a>
 </div>
 
 </div>
@@ -68,29 +68,46 @@ const Portfolio = () => {
    
 {/* //////////////////////////////////// graphic Portion ////////////////////////////////////////////////// */}
 
-      <div className=" main services-box "  id="graphic-portion" >
+      <div className="  services-box "  id="graphic-portion" >
+        <div className="main">
+        
         <img
           style={{ width: "33rem", height: "20rem"}}
           src="https://drive.google.com/thumbnail?id=1740pj7IKCb8oQoBK_VCy5zqZZ49VoY_y&sz=w1000"
           alt="error"
-        
-        />
+          
+          />
+
+<a  href="https://drive.google.com/drive/folders/1QDu6Hb0GmZlm1tbC2cqaOUDckxY1kBcY" target="_port" style={{textDecoration:'none',color:'white',fontSize:'2rem'}}> <h1 className="prev" style={{cursor:'pointer',color:'white',display:'flex',flexDirection:'column'}}><p className="text-danger h1">Graphic Design Work</p>Preview</h1></a>
+          </div>
+
+
+          <div className="main">
+
          <img
           style={{ width: "33rem", height: "20rem"}}
-         
+          
           src="https://drive.google.com/thumbnail?id=10mxGGY9y-VAJx2SA_WcPGubZYpu_A9UD&sz=w1000"
-       
+          
           alt="error"
-         
-        />
+          
+          />
+              <a  href="https://drive.google.com/drive/folders/1QDu6Hb0GmZlm1tbC2cqaOUDckxY1kBcY" target="_port" style={{textDecoration:'none',color:'white',fontSize:'2rem'}}> <h1 className="prev" style={{cursor:'pointer',color:'white',display:'flex',flexDirection:'column'}}><p className="text-danger h1">Graphic Design Work</p>Preview</h1></a>
+          </div>
+
+
+          <div className="main">
+
          <img
           style={{ width: "33rem", height: "20rem"}}
-      
+          
           src="https://drive.google.com/thumbnail?id=1hLCkErZvMcsEBsNA7iPxH0yLsXTR4iBo&sz=w1000&sz=w1000"
           alt="error"
-     
-        />
-        <h3 className="prev" style={{cursor:'pointer'}}><a  href="https://drive.google.com/drive/folders/1QDu6Hb0GmZlm1tbC2cqaOUDckxY1kBcY" target="_port" style={{textDecoration:'none',color:'white',fontSize:'2rem'}}>Preview</a></h3>
+          
+          />
+              <a  href="https://drive.google.com/drive/folders/1QDu6Hb0GmZlm1tbC2cqaOUDckxY1kBcY" target="_port" style={{textDecoration:'none',color:'white',fontSize:'2rem'}}> <h1 className="prev" style={{cursor:'pointer',color:'white',display:'flex',flexDirection:'column'}}><p className="text-danger h1">Graphic Design Work</p>Preview</h1></a>
+          </div>
+  
       </div>
 
 

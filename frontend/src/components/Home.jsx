@@ -11,7 +11,7 @@ export const Home = () => {
         <div style={{display:'flex',justifyContent:'flex-start',alignItems:'center',gap:'2rem',fontSize:'2rem'}}> 
 
         <button><a style={{textDecoration:'none',fontSize:'1.5rem',color:'white'}} href="#contact">Hire Me</a></button>
-        <button><a style={{textDecoration:'none',fontSize:'1.5rem',color:'white'}} href="https://drive.google.com/file/d/15s67VXhiTF8GmoQAWUhlmz6IsAH7gTDV/view " target='_blank'> Get Resume</a></button>
+        <button><a style={{textDecoration:'none',fontSize:'1.5rem',color:'white'}} href="https://drive.google.com/file/d/15s67VXhiTF8GmoQAWUhlmz6IsAH7gTDV/view " target='_blank'>Resume</a></button>
         </div>
 
     </div>

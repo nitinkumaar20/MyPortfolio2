@@ -28,7 +28,7 @@ setSuccess(false);
 {
   success ?<div>
     <div className="div-center my-4">
-      <h1>CONTACT</h1>
+      <h1 style={{color:'#118868'}}>CONTACT</h1>
       {/* <h2>Here's My Past Projects</h2> */}
     </div>
       
