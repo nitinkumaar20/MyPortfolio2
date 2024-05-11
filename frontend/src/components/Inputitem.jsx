@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Inputitem = ({input,id,type,onChangeData,name,value}) => {
+export const Inputitem = ({input,id,type,onChangeData,name,value,pattern}) => {
   // const onchange =(e)=>{
   //   console.log(e.target.value);
   // }
@@ -14,10 +14,12 @@ export const Inputitem = ({input,id,type,onChangeData,name,value}) => {
       id={id}
       name={name}
       type={type}
+      pattern={pattern}
       style={{fontSize:'1.5rem',outline:'none', borderRadius:'1rem',padding:'0 1rem',border:"1px solid grey"}}
     maxLength={20}
       placeholder={input}
       onChange={onChangeData}
+      required
     />
   </div>
   )

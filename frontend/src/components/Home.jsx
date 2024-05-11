@@ -1,10 +1,15 @@
 import React from 'react'
+import { motion } from "framer-motion"
+import Navbar from './Navbar'
 
 export const Home = () => {
+  
   return (
+    <>
+    <Navbar/>
     <section id="section-one">
     {/* <!-------- left side section -------> */}
-    <div id="leftbox">
+    <motion.div id="leftbox" initial={{ x:-200}} whileInView={{x:0}} viewport={{once:true}} transition={{duration:.5}}>
         <h3>Hi, I am</h3>
         <h1>NITIN KUMAR</h1>
         <p>Web Developer and Graphic Designer</p>
@@ -14,15 +19,16 @@ export const Home = () => {
         <button><a style={{textDecoration:'none',fontSize:'1.5rem',color:'white'}} href="https://drive.google.com/file/d/15s67VXhiTF8GmoQAWUhlmz6IsAH7gTDV/view " target='_blank'>Resume</a></button>
         </div>
 
-    </div>
+    </motion.div>
     {/* <!-- right side section  ------------> */}
-    <div id="rightbox">
+    <motion.div id="rightbox" >
 
-        <img src="https://drive.google.com/thumbnail?id=1m5dKHwQ4hsymrDNcel-NqtqU0fPA0f-e&sz=w1000" alt="error"/>
+        <motion.img src="https://drive.google.com/thumbnail?id=1m5dKHwQ4hsymrDNcel-NqtqU0fPA0f-e&sz=w1000" initial={{scale:0.5}} animate={{scale:1}} transition={{duration:.5}}   whileTap={{ scale: 1.1 }} alt="error"/>
       
         
-    </div>
+    </motion.div>
 
 </section>
+</>
   )
 }

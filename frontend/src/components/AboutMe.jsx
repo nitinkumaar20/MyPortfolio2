@@ -1,9 +1,11 @@
 import React from "react";
+import { motion } from "framer-motion"
+
 import storyImg from '../assets/images/storyimg.png'
 const AboutMe = () => {
   return (
     <section className="about-sec " id="section-2">
-      <div
+      <motion.div 
       className="section-heading"
    
       >
@@ -22,13 +24,13 @@ const AboutMe = () => {
 
         </ul>
         {/* </marquee> */}
-      </div>
+      </motion.div>
 
 {/* /////////////////////////image and text /////////////////////////////////////////////////  */}
 
         <div className='row about-div' >
 
-        <div className="col-md-6 img-dev" >
+        <div className="col-md-6 img-dev"  >
           <img
             className="w-75 h-100"
             src="https://drive.google.com/thumbnail?id=1ZbOzj2R3IVdOyg2xRxTHP9AcATYRF7bz&sz=w1000"
@@ -37,11 +39,11 @@ const AboutMe = () => {
             />
         </div>
         <div className="col-md-6 text-div" >
-          <div className="py-md-5 px-0 ">
+          <motion.div className="py-md-5 px-0 " initial={{ x:200}} whileInView={{x:0}} viewport={{once:true}} transition={{duration:.5}}>
 
-          <h3 style={{fontSize:'3rem',lineHeight:'1rem'}}>LET’S</h3>
-  <h1 style={{fontSize:'3rem',lineHeight:'4rem',color:' #118868'}}>
-  INTRODUCE ABOUT</h1>
+          <motion.h3  style={{fontSize:'3rem',lineHeight:'1rem'}}>LET’S</motion.h3>
+  <motion.h1 style={{fontSize:'3rem',lineHeight:'4rem',color:' #118868'}}>
+  INTRODUCE ABOUT</motion.h1>
   <h3 style={{fontSize:'3rem',lineHeight:'1rem'}}>
   MYSELF</h3>
 
@@ -51,7 +53,7 @@ const AboutMe = () => {
 
       
   
-          </div>
+          </motion.div>
         </div>
         
             </div>

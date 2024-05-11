@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion"
 
 
 const Services = () => {
@@ -19,30 +20,39 @@ const Services = () => {
             {/* </marquee> */}
            </div>
            <div class="services-heading2">
-               <h1>We do awesome services for our clients.</h1>
+               <motion.h1 initial={{y:100}} whileInView={{y:0}} viewport={{once:true}} transition={{duration:.5}}>We do awesome services for our clients.</motion.h1>
            </div>
            <div class="services-box">
-           <div  className='boxes web'>
+
+  {/* //////////////////   web development ///////////////////////////////////////////////// */}
+
+           <motion.div initial={{ scale:0}} whileInView={{scale:1}} viewport={{once:true}} transition={{duration:.5}} className='boxes web'>
     
                 <img src="https://drive.google.com/thumbnail?id=1t9D5fqHashvYVTIycVnp9u84Y2LmOcqJ&sz=w1000"  alt="error"/>
 
                    <h2>Web Development</h2>
                    <p>I provide web development services with treandy techologies like React, Node, Express, MongoDB, Bootstrape.</p>
-               </div>
-               <div id="photoshop" className='boxes'>
+               </motion.div>
+
+  {/* //////////////////   web development ///////////////////////////////////////////////// */}
+
+               <motion.div initial={{ scale:0}} whileInView={{scale:1}}viewport={{once:true}} transition={{duration:.5}} id="photoshop" className='boxes'>
 
                 <img src="https://drive.google.com/thumbnail?id=1vtNs2y-ZnSToZh_FPt0Be1dpKoFGkqlK&sz=w1000" alt="error"/>
 
                    <h2>Photoshop Editing</h2>
                    <p>I provide Photoshop Editing Retouching serives for any Ecommerce and Personal use.</p>
-               </div>
-               <div id="graphic" className='boxes'>
+               </motion.div>
+
+  {/* //////////////////   web development ///////////////////////////////////////////////// */}
+
+               <motion.div id="graphic" className='boxes' initial={{ scale:0}} whileInView={{scale:1}} viewport={{once:true}} transition={{duration:.5}}>
 
              <img src="https://drive.google.com/thumbnail?id=1qh7wHG_DadMSdnxtjR661QQ9rqbH2c_k&sz=w1000" alt="error"/>
            
                 <h2>Graphic Design</h2>
                 <p>I provide Graphic design services for their branding and Ecommerce store Purspose like Amazone graphics and Banners logo Design etc.</p>
-            </div>
+            </motion.div>
            </div>
 
     </section>
