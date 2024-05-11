@@ -3,6 +3,10 @@ import { motion } from "framer-motion"
 
 import storyImg from '../assets/images/storyimg.png'
 const AboutMe = () => {
+  const variants = {
+    visible:{x:0},
+    hidden:{x:100},
+    }
   return (
     <section className="about-sec " id="section-2">
       <motion.div 
@@ -39,13 +43,15 @@ const AboutMe = () => {
             />
         </div>
         <div className="col-md-6 text-div" >
-          <motion.div className="py-md-5 px-0 " initial={{ x:200}} whileInView={{x:0}} viewport={{once:true}} transition={{duration:.5}}>
+          <motion.div className="py-md-5 px-0 " initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}} transition={{duration:.5}} >
 
-          <motion.h3  style={{fontSize:'3rem',lineHeight:'1rem'}}>LET’S</motion.h3>
-  <motion.h1 style={{fontSize:'3rem',lineHeight:'4rem',color:' #118868'}}>
+          <motion.h3 initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}} transition={{duration:.7}}   style={{fontSize:'3rem',lineHeight:'1rem'}}>LET’S</motion.h3>
+
+  <motion.h1 initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}} transition={{duration:.5}}  style={{fontSize:'3rem',lineHeight:'4rem',color:' #118868'}}>
   INTRODUCE ABOUT</motion.h1>
-  <h3 style={{fontSize:'3rem',lineHeight:'1rem'}}>
-  MYSELF</h3>
+
+  <motion.h3 initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}} transition={{duration:.3}}  style={{fontSize:'3rem',lineHeight:'1rem'}}>
+  MYSELF</motion.h3>
 
         <h4 style={{lineHeight:'2rem',padding:'2rem 0'}}>I am Nitin Kumar a Web Developer and Graphic Designer, I completed my B.Tech in Computer Science Engineering from the Phonics Group of Institutions.</h4>
 

@@ -15,8 +15,8 @@ export const Inputitem = ({input,id,type,onChangeData,name,value,pattern}) => {
       name={name}
       type={type}
       pattern={pattern}
-      style={{fontSize:'1.5rem',outline:'none', borderRadius:'1rem',padding:'0 1rem',border:"1px solid grey"}}
-    maxLength={20}
+      style={{fontSize:'1.5rem',outline:'none', borderRadius:'1rem',padding:'0 1rem',}}
+    maxLength={type == "tel"?10:20}
       placeholder={input}
       onChange={onChangeData}
       required

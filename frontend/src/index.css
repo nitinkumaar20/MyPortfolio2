@@ -122,20 +122,23 @@ z-index: 999;
     z-index: 999;
   
   }
-  .responsive_nav .main  {
-
-
-    /* visibility: hidden; */
-    /* background-color: #e6de7b; */
-  }
+ 
  
   .responsive_nav a{
-    font-size: 20rem;
+    font-size: 12rem;
     color:rgb(255, 255, 255);
 
   }
   nav a {
     font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .responsive_nav a{
+    font-size: 20rem;
+    color:rgb(255, 255, 255);
+
   }
 }
 
@@ -338,13 +341,7 @@ text-transform: capitalize;
   margin: auto;
   display: inherit;
 }
-#section-3 #graphic img {
-  filter: invert(14%) sepia(94%) saturate(6461%) hue-rotate(353deg)
-    brightness(96%) contrast(104%);
-    z-index: -99;
 
-    
-}
 
 #section-3 .boxes:hover {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -378,8 +375,8 @@ text-transform: capitalize;
 
 /* ////////////////////////////////// protfolio ////////////////////////////////// */
 
-#portfolio .services-box .main {
-  position: relative; 
+#portfolio  .main {
+  position:relative; 
   overflow: hidden;
 
   width: 100%;
@@ -389,7 +386,7 @@ text-transform: capitalize;
   align-items: center;
   justify-content: center;
 
-
+z-index: -1;
 }
 #portfolio .main img {
   padding: 0 0.7rem;
@@ -667,17 +664,21 @@ max-height: 49rem;
   }
 }
 
-#Pno{
-  outline: 0;
-  /* background-color: #012c21; */
-}
 
-#Pno:valid{
-  border-color: #118868;
-  
-}
 
 #Pno:focus:invalid{
   border-color: red;
+}
+
+input:invalid {
+  border: 1px solid rgb(219, 3, 3);
+  /* background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% ;
+  background-size: 25px; */
+
+}
+input:valid{
+  border: 1px solid rgb(100, 219, 3);
+  /* background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50%;
+  background-size: 25px; */
 }
 

@@ -34,7 +34,7 @@ const Services = () => {
                    <p>I provide web development services with treandy techologies like React, Node, Express, MongoDB, Bootstrape.</p>
                </motion.div>
 
-  {/* //////////////////   web development ///////////////////////////////////////////////// */}
+  {/* //////////////////   photoshop ///////////////////////////////////////////////// */}
 
                <motion.div initial={{ scale:0}} whileInView={{scale:1}}viewport={{once:true}} transition={{duration:.5}} id="photoshop" className='boxes'>
 
@@ -44,11 +44,11 @@ const Services = () => {
                    <p>I provide Photoshop Editing Retouching serives for any Ecommerce and Personal use.</p>
                </motion.div>
 
-  {/* //////////////////   web development ///////////////////////////////////////////////// */}
+  {/* //////////////////  graphic design ///////////////////////////////////////////////// */}
 
                <motion.div id="graphic" className='boxes' initial={{ scale:0}} whileInView={{scale:1}} viewport={{once:true}} transition={{duration:.5}}>
-
-             <img src="https://drive.google.com/thumbnail?id=1qh7wHG_DadMSdnxtjR661QQ9rqbH2c_k&sz=w1000" alt="error"/>
+   
+             <img src="https://drive.google.com/thumbnail?id=13Ci3ScBkCwTttbtwryur_zAgw0uNck6C&sz=w1000" alt="error"/>
            
                 <h2>Graphic Design</h2>
                 <p>I provide Graphic design services for their branding and Ecommerce store Purspose like Amazone graphics and Banners logo Design etc.</p>

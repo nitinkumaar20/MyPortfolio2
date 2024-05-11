@@ -52,14 +52,14 @@ setSuccess(false);
 
         <Inputitem  input={"Email"} value={message.email} type={"email"} id={"email"} name={"email"} onChangeData={onchange} />
 
-        <Inputitem  input={"Phone No"} value={message.phone} type={"tel"} id={"Pno"} name={"phone"} pattern={"[0-9]{3}-[0-9]{3}-[0-9]{4}"} onChangeData={onchange}/>
+        <Inputitem  input={"Phone No"} value={message.phone} type={"tel"} id={"Pno"} name={"phone"} pattern={"[0-9]{10}"} onChangeData={onchange}/>
 
 
         <label htmlFor="message" style={{ fontSize: "1.5rem",marginTop:'1rem' }}>Message</label>
         <textarea  id="message" cols="30" rows="5" style={{fontSize:'1.5rem',outline:"none",borderRadius:'2rem',marginTop:'.5rem'}} placeholder="Enter message" name ="message" value={message.message} onChange={onchange}></textarea>
         <div className="div-center mt-4 " >
 
-      <motion.button  initial={{ y:-100}} whileInView={{y:0}} viewport={{once:true}} transition={{duration:.001}} className="btn-all"   type="submit" style={{fontSize:'1.7rem'}}>Submit</motion.button>
+      <motion.button  initial={{ y:-100}} whileInView={{y:0}} viewport={{once:true}} transition={{duration:.1}} className="btn-all"   type="submit" style={{fontSize:'1.7rem'}}>Submit</motion.button>
         </div>
         </motion.form>
         </div>:
