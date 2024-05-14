@@ -34,7 +34,7 @@ Message(message).then(({data})=>{
 
 });
 
-    // console.log(message);
+  
   }
 
 
@@ -48,15 +48,15 @@ Message(message).then(({data})=>{
 <ToastContainer
 
 />
-    <section style={{ padding: "2rem 19rem" }} id="contact">
+    <section style={{ padding: "2rem 16rem" }} id="contact">
 {
   success ?<div>
     <div className="div-center my-4">
       <h1 style={{color:'#118868'}}>CONTACT</h1>
-      {/* <h2>Here's My Past Projects</h2> */}
+     
     </div>
       
-        <motion.form action="" className="row " onSubmit={MesSubmit} >
+        <motion.form  className="row " onSubmit={MesSubmit} >
           
         <Inputitem  initial={{x:-200}} whileInView={{x:0}} input={"First Name"} value={message.Fname} type={"text"} id={"Fname"} name={"Fname"} onChangeData={onchange}/>
 
@@ -67,13 +67,13 @@ Message(message).then(({data})=>{
         <Inputitem  input={"Phone No"} value={message.phone} type={"tel"} id={"Pno"} name={"phone"} pattern={"[0-9]{10}"} onChangeData={onchange}/>
 
 
-        <label htmlFor="message" style={{ fontSize: "1.5rem",marginTop:'1rem' }}>Message</label>
-        <textarea  id="message" cols="30" rows="5" style={{fontSize:'1.5rem',outline:"none",borderRadius:'2rem',marginTop:'.5rem'}} placeholder="Enter message" name ="message" value={message.message} onChange={onchange}></textarea>
+        <label htmlFor="message" style={{ fontSize: "1rem",marginTop:'1rem' }}>Message</label>
+        <textarea  id="message" cols="30" rows="5" style={{fontSize:'1rem',outline:"none",borderRadius:'2rem',marginTop:'.5rem'}} placeholder="Enter message" name ="message" value={message.message} onChange={onchange}></textarea>
         <div className="div-center mt-4 " >
 
 {/* //////////////////////////////////// sumbmit button .////////////////////////////////////////////// */}
 
-      <motion.button  initial={{ y:-100}} whileInView={{y:0}} viewport={{once:true}} transition={{duration:.1}} className="btn-all"   type="submit" style={{fontSize:'1.7rem'}}  >Submit</motion.button>
+      <motion.button  initial={{ y:-100}} whileInView={{y:0}} viewport={{once:true}} transition={{duration:.1}} className="btn-all"   type="submit" style={{fontSize:'1rem'}}  >Submit</motion.button>
         </div>
        
         </motion.form>

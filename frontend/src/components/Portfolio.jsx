@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Portfolio = () => {
   return (
     <section
-      style={{ padding: "2rem 16rem", overflow: "hidden" }}
+      style={{ padding: "0 10rem", overflow: "hidden" ,display:'flex',flexDirection:'column',alignItems:'center',paddingBottom:'2rem'}}
       id="portfolio"
     >
       <div className="section-heading">
@@ -49,32 +49,31 @@ const Portfolio = () => {
           transition={{ duration: 0.5 }}
         >
           <img
-            style={{ width: "33rem", height: "20rem", padding: "0" }}
+            style={{ width: "27rem", height: "14rem", }}
             src="https://drive.google.com/thumbnail?id=1CxsngU4qWCbr_BdMoVDrChUO4YM7sNNa&sz=w1000"
             alt="error"
           />
           <a
             href="https://nitinkumaar20.github.io/Quiz.github.io/"
             target="_port"
-            style={{ textDecoration: "none", color: "white", fontSize: "2rem" }}
+            style={{ textDecoration: "none", color: "white", fontSize: ".5rem" }}
           >
             {" "}
             <h3
-              className="prev h1"
+              className="prev"
               style={{
                 cursor: "pointer",
                 objectFit: "cover",
-                display: "flex",
-                flexDirection: "column",
+            
               }}
             >
-              <p className="text-danger h1">Quiz App</p> Preview
+              <p className="text-danger h3">Quiz App</p> Preview
             </h3>
           </a>
         </motion.div>
         <div className="main ">
           <img
-            style={{ width: "33rem", height: "20rem", padding: "0" }}
+            style={{width: "27rem", height: "14rem", }}
             src="https://drive.google.com/thumbnail?id=1HAa4HUeI_OD_ujk9nO-94_YharlrVsqq&sz=w1000"
             alt="error"
           />
@@ -82,17 +81,18 @@ const Portfolio = () => {
           <a
             href="https://github.com/nitinkumaar20/Student-Registration-Portal"
             target="_port"
-            style={{ textDecoration: "none", color: "red", fontSize: "2rem" }}
+            style={{ textDecoration: "none", color: "red", fontSize: "1rem" }}
           >
             <h3
-              className="prev h1"
+              className="prev "
               style={{
+                objectFit: "cover",
                 cursor: "pointer",
-                display: "flex",
-                flexDirection: "column",
+          
+              
               }}
             >
-              <p className="text-danger h1">Student Registartion portal</p>
+              <p className="text-danger h5">Student Registartion portal</p>
               Preview
             </h3>
           </a>
@@ -105,7 +105,7 @@ const Portfolio = () => {
           transition={{ duration: 0.5 }}
         >
           <img
-            style={{ width: "33rem", height: "20rem", padding: "0" }}
+            style={{width: "27rem", height: "14rem", padding: "0" }}
             src="https://drive.google.com/thumbnail?id=1TzOshuawxN_ZAs95c-_Es0V3F_PS6uiA&sz=w1000"
             alt="error"
           />
@@ -117,15 +117,14 @@ const Portfolio = () => {
           >
             {" "}
             <h3
-              className="prev h1"
+              className="prev"
               style={{
                 cursor: "pointer",
-                display: "flex",
-                flexDirection: "column",
+        
               }}
             >
               {" "}
-              <p className="text-danger h1">Text Editor</p> Preview
+              <p className="text-danger h2">Text Editor</p> Preview
             </h3>
           </a>
         </motion.div>
@@ -142,7 +141,7 @@ const Portfolio = () => {
           transition={{ duration: 0.5 }}
         >
           <img
-            style={{ width: "33rem", height: "20rem" }}
+            style={{width: "27rem", height: "14rem"}}
             src="https://drive.google.com/thumbnail?id=1740pj7IKCb8oQoBK_VCy5zqZZ49VoY_y&sz=w1000"
             alt="error"
           />
@@ -153,23 +152,22 @@ const Portfolio = () => {
             style={{ textDecoration: "none", color: "white", fontSize: "2rem" }}
           >
             {" "}
-            <h1
+            <h2
               className="prev"
               style={{
                 cursor: "pointer",
                 color: "white",
-                display: "flex",
-                flexDirection: "column",
+        
               }}
             >
-              <p className="text-danger h1">Graphic Design Work</p>Preview
-            </h1>
+              <p className="text-danger h3">Graphic Design Work</p>Preview
+            </h2>
           </a>
         </motion.div>
 
         <div className="main">
           <img
-            style={{ width: "33rem", height: "20rem" }}
+            style={{width: "27rem", height: "14rem"}}
             src="https://drive.google.com/thumbnail?id=10mxGGY9y-VAJx2SA_WcPGubZYpu_A9UD&sz=w1000"
             alt="error"
           />
@@ -179,17 +177,16 @@ const Portfolio = () => {
             style={{ textDecoration: "none", color: "white", fontSize: "2rem" }}
           >
             {" "}
-            <h1
+            <h2
               className="prev"
               style={{
                 cursor: "pointer",
                 color: "white",
-                display: "flex",
-                flexDirection: "column",
+           
               }}
             >
-              <p className="text-danger h1">Graphic Design Work</p>Preview
-            </h1>
+              <p className="text-danger h3">Graphic Design Work</p>Preview
+            </h2>
           </a>
         </div>
 
@@ -201,27 +198,26 @@ const Portfolio = () => {
           transition={{ duration: 0.5 }}
         >
           <img
-            style={{ width: "33rem", height: "20rem" }}
+            style={{width: "27rem", height: "14rem" }}
             src="https://drive.google.com/thumbnail?id=1hLCkErZvMcsEBsNA7iPxH0yLsXTR4iBo&sz=w1000&sz=w1000"
             alt="error"
           />
           <a
             href="https://drive.google.com/drive/folders/1QDu6Hb0GmZlm1tbC2cqaOUDckxY1kBcY"
             target="_port"
-            style={{ textDecoration: "none", color: "white", fontSize: "2rem" }}
+            style={{ textDecoration: "none", color: "white", fontSize: "1rem" }}
           >
             {" "}
-            <h1
+            <h2
               className="prev"
               style={{
                 cursor: "pointer",
                 color: "white",
-                display: "flex",
-                flexDirection: "column",
+                
               }}
             >
-              <p className="text-danger h1">Graphic Design Work</p>Preview
-            </h1>
+              <p className="text-danger h3">Graphic Design Work</p>Preview
+            </h2>
           </a>
         </motion.div>
       </motion.div>

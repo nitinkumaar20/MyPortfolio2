@@ -26,6 +26,7 @@ const Navbar = () => {
       <button className="nav-btn" onClick={showNavbar}>
         <FaBars />
       </button>
+      {/* #section-one */}
       <nav className={`${addCls?'responsive_nav':''}`}>
         <a href="#section-one" onClick={()=>{setAddCls((e)=>!e)}}>Home</a>
         <a href="#section-2" onClick={()=>{setAddCls((e)=>!e)}}>About</a>

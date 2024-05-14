@@ -5,8 +5,8 @@ import { motion } from "framer-motion"
 const Services = () => {
   return (
 <section id="section-3">
-        <div id="services-heading">
-        {/* <marquee scrollamount="10"> */}
+        <div className="section-heading">
+   
             <ul>
                 <li>S</li>
                 <li>E</li>
@@ -17,7 +17,7 @@ const Services = () => {
                 <li>E</li>
                 <li>S</li>
             </ul>
-            {/* </marquee> */}
+         
            </div>
            <div class="services-heading2">
                <motion.h1 initial={{y:100}} whileInView={{y:0}} viewport={{once:true}} transition={{duration:.5}}>We do awesome services for our clients.</motion.h1>

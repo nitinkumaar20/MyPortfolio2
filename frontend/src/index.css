@@ -164,6 +164,7 @@ header nav {
   align-items: center;
   width: 100%;
     padding: 0 10rem;
+    /* height: 100vh; */
 }
 /* ------------------------------------  home leftside css here ----------------------------------*/
 #leftbox {
@@ -224,7 +225,7 @@ header nav {
   content: "";
   position: absolute;
   width: 100%;
-  height: 65rem;
+  height: 35rem;
   z-index: -1;
 
   background: linear-gradient(
@@ -263,14 +264,19 @@ header nav::before {
 /* /////////////////////////////////////////// ABOUT ///////////////////////////////////////////////////// */
 .about-sec {
   overflow: hidden;
+  padding: 0 10rem;
+  padding-bottom: 1rem;
 }
-
+.img-dev img{
+  width: 28rem;
+  height:33rem;
+}
 .about-div {
   justify-content: center;
-  padding: "0 16rem";
+  padding: "0 10rem";
 }
 #section-2 {
-  padding: 2rem 0;
+  /* padding: 1rem 0; */
 }
 
 #section-2 .img-dev {
@@ -289,25 +295,20 @@ header nav::before {
 
 /* /////////////////////////////////////////// services ///////////////////////////////////////////////////// */
 
-#section-3 #services-heading ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#section-3 #services-heading li {
-  list-style: none;
-  padding: 2rem 5rem;
 
-  font-size: 3rem;
-}
 #section-3 {
-  padding: 2rem 14rem;
+  padding: 0 9rem;
+  padding-bottom: 2rem;
   background-color: #f8f6f6;
+  overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 .services-heading2 h1 {
   text-align: center;
-  line-height: 5rem;
-  padding: 2rem 0rem;
+
   color: var(--mainColordark);
   text-transform: capitalize;
   font-weight: 1000;
@@ -315,6 +316,7 @@ header nav::before {
   width: 90rem;
   line-height: 6rem;
   margin: auto;
+  font-size: 1.6rem;
 }
 
 /* ------------------------------------- secion 3 serivce bos css---------------------- */
@@ -325,15 +327,16 @@ header nav::before {
   height: 100%;
   grid-gap: 2rem;
 
-  margin-bottom: 1.4rem;
+  /* margin-bottom: 1.4rem; */
 }
 #section-3 .services-box P {
-  font-size: 1.2rem;
+  padding: 0 1rem;
+  font-size: .8rem;
   text-align: center;
   margin-bottom: 3rem;
 }
 #section-3 .services-box h2 {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -344,8 +347,8 @@ header nav::before {
 }
 
 #section-3 img {
-  width: 20rem;
-  height: 20rem;
+  width: 13rem;
+  height: 13rem;
   padding: 2rem;
   margin: auto;
   display: inherit;
@@ -391,14 +394,10 @@ header nav::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* z-index: -2; */
+
 }
 
-#portfolio .services-box .main img {
-  padding: 0 0.7rem;
-  width: 100%;
-  height: 100%;
-}
+
 
 #portfolio .services-box .prev {
   position: absolute;
@@ -411,6 +410,7 @@ header nav::before {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   transform: translateY(100%);
   transition: 0.3s;
   color: #eee;
@@ -444,7 +444,7 @@ header nav::before {
   border: none;
   padding: 0.5rem 2rem;
   border-radius: 3rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
   transition: 0.7s;
   background-color: var(--mainColordark);
@@ -467,32 +467,20 @@ header nav::before {
 }
 
 .img-sz {
-  width: 4.1rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
 }
 
-.img-sz:hover {
-  /* position: relative; */
-  /* top: 0.7rem; */
-}
-
-.foter-nav-effec {
-}
-
-.foter-nav-effect:hover {
-  /* position: relative; */
-  /* left: 0.3rem; */
-}
 
 .section-heading {
   display: flex;
-  padding: 0 16rem;
+  padding: 0 10rem;
   justify-content: center;
   align-items: center;
 }
 .section-heading ul {
-  gap: 8rem;
-  font-size: 5rem;
+  gap: 5rem;
+  font-size: 2rem;
   display: flex;
   text-decoration: none;
   list-style: none;
