@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-// import './App.css'
+
 import Navbar from './components/Navbar'
 import { Home } from './components/Home'
 import AboutMe from './components/AboutMe'
@@ -11,17 +11,18 @@ import Footer from './components/Footer'
 
 
 function App() {
+
   const [count, setCount] = useState(0)
 
   return (
     <>
     <Navbar/>
     <Home/>
-    <AboutMe/>
-    <Services/>
-    <Portfolio/>
+    {/* <AboutMe/> */}
+    {/* <Services/> */}
+    {/* <Portfolio/> */}
     <Contact/>
-  <Footer/>
+  {/* <Footer/> */}
 
     </>
   )

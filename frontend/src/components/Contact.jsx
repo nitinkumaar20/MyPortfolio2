@@ -4,11 +4,15 @@ import {Message} from '../api/index'
 import { FaSquareInstagram } from "react-icons/fa6";
 import { IoMdDoneAll } from "react-icons/io";
 import { motion } from "framer-motion"
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
+
 const [message, setMessage] = useState({Fname:"",Lname:"",phone:"",message:"",email:""});
-const [success, setSuccess] = useState(true)
+const [success, setSuccess] = useState(true);
+
+
 
 const onchange =(e)=>{
 
@@ -19,23 +23,31 @@ const onchange =(e)=>{
     e.preventDefault()
 Message(message).then(({data})=>{
   console.log(data)
-setSuccess(false);
-}).catch(({response})=>{console.log(response.data.error)});
-    console.log(message);
+  toast(data.message);
+  setSuccess(false);
+
+}).catch(({response})=>{
+  console.log(response.data.error)
+ 
+  toast(response.data.error);
+ 
+
+});
+
+    // console.log(message);
   }
 
 
-  // const variants1 = {
-  //   visible:{x:0},
-  //   hidden:{x:200}
-  // }
+
   const variants = {
     visible:{x:0},
     hidden:{x:-200}
   }
   return (
     <>
-  
+<ToastContainer
+
+/>
     <section style={{ padding: "2rem 19rem" }} id="contact">
 {
   success ?<div>
@@ -59,8 +71,11 @@ setSuccess(false);
         <textarea  id="message" cols="30" rows="5" style={{fontSize:'1.5rem',outline:"none",borderRadius:'2rem',marginTop:'.5rem'}} placeholder="Enter message" name ="message" value={message.message} onChange={onchange}></textarea>
         <div className="div-center mt-4 " >
 
-      <motion.button  initial={{ y:-100}} whileInView={{y:0}} viewport={{once:true}} transition={{duration:.1}} className="btn-all"   type="submit" style={{fontSize:'1.7rem'}}>Submit</motion.button>
+{/* //////////////////////////////////// sumbmit button .////////////////////////////////////////////// */}
+
+      <motion.button  initial={{ y:-100}} whileInView={{y:0}} viewport={{once:true}} transition={{duration:.1}} className="btn-all"   type="submit" style={{fontSize:'1.7rem'}}  >Submit</motion.button>
         </div>
+       
         </motion.form>
         </div>:
          <div  style={{ padding: "2rem 19rem", display:'flex',justifyContent:'center',alignItems:'center', }}>
@@ -69,6 +84,8 @@ setSuccess(false);
         </div>
 }
     </section>
+
+
     </>
   );
 };

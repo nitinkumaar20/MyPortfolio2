@@ -13,18 +13,22 @@ export const Home = () => {
     <section id="section-one">
     {/* <!-------- left side section -------> */}
     <div id="leftbox" >
+
         <motion.h3 initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}} transition={{duration:.7}}>Hi, I am</motion.h3>
+
         <motion.h1 initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}}  transition={{duration:.5}}>NITIN KUMAR</motion.h1>
         <motion.p initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}} transition={{duration:.3}}>Web Developer and Graphic Designer</motion.p>
 
 
-        <motion.div initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}}  transition={{duration:.7}} style={{display:'flex',justifyContent:'flex-start',alignItems:'center',gap:'2rem',fontSize:'2rem'}}> 
+        <motion.div initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}}  transition={{duration:.7}} style={{display:'flex',justifyContent:'flex-start',alignItems:'center',gap:'2rem'}}> 
 
-        <button><a style={{textDecoration:'none',fontSize:'1.5rem',color:'white'}} href="#contact">Hire Me</a></button>
-        <button><a style={{textDecoration:'none',fontSize:'1.5rem',color:'white'}} href="https://drive.google.com/file/d/15s67VXhiTF8GmoQAWUhlmz6IsAH7gTDV/view " target='_blank'>Resume</a></button>
+        <button><a  href="#contact">Hire Me</a></button>
+        <button><a  href="https://drive.google.com/file/d/15s67VXhiTF8GmoQAWUhlmz6IsAH7gTDV/view " target='_blank'>Resume</a></button>
         </motion.div>
 
     </div>
+
+
     {/* <!-- right side section  ------------> */}
     <motion.div id="rightbox" >
 

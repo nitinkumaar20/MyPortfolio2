@@ -2,14 +2,8 @@ import { messageModel}  from "../Models/Message.js";
 import nodemailer from 'nodemailer'
 import { isRequired } from "../middleware/fieldMiddleware.js";
 const ownerEmail = 'nk999549@gmail.com'
- 
-// , [
-//   "email",
-//   "phone",
-//   "Fname",
-//   "Lname",
-//   "message",
-// ]);
+import 'dotenv/config'
+
 export const Message = async (req, res) => {
     try {
       const { email,phone, Fname,Lname,message } = req.body
@@ -39,8 +33,8 @@ export const Message = async (req, res) => {
         const transporter = nodemailer.createTransport({
           service: "gmail",
           auth: {
-            user: "nk999549@gmail.com",
-            pass: "mqitkvdjuzrzwago",
+            user: process.env.USER,
+            pass: process.env.PASS,
           },
         });
   
