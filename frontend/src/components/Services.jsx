@@ -26,7 +26,7 @@ const Services = () => {
 
   {/* //////////////////   web development ///////////////////////////////////////////////// */}
 
-           <motion.div initial={{ scale:0}} whileInView={{scale:1}} viewport={{once:true}} transition={{duration:.5}} className='boxes web'>
+           <motion.div initial={{ scale:0}} whileInView={{scale:1}} viewport={{once:true}} transition={{duration:.5}} className='boxes web' >
     
                 <img src="https://drive.google.com/thumbnail?id=1t9D5fqHashvYVTIycVnp9u84Y2LmOcqJ&sz=w1000"  alt="error"/>
 

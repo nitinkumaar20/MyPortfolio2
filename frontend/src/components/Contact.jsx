@@ -50,7 +50,7 @@ Message(message).then(({data})=>{
 />
     <section style={{ padding: "2rem 16rem" }} id="contact">
 {
-  success ?<div>
+  success ? (<div>
     <div className="div-center my-4">
       <h1 style={{color:'#118868'}}>CONTACT</h1>
      
@@ -77,11 +77,11 @@ Message(message).then(({data})=>{
         </div>
        
         </motion.form>
-        </div>:
-         <div  style={{ padding: "2rem 19rem", display:'flex',justifyContent:'center',alignItems:'center', }}>
-          <h1>Message send Succesful</h1>
-<IoMdDoneAll style={{fontSize:'3rem',margin:'0 1rem',color:'#1aff34',padding:'0'}} />
-        </div>
+        </div>):
+         (<div  style={{ padding: "0rem 10rem", display:'flex',justifyContent:'center',alignItems:'center', }}>
+          <h2>Message send Succesful</h2>
+<IoMdDoneAll style={{fontSize:'5rem',margin:'0 1rem',color:'#1aff34',padding:'0'}} />
+        </div>)
 }
     </section>
 

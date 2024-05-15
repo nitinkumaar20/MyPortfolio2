@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 export const Home = () => {
   const variants = {
     visible:{x:0,},
-    hidden:{x:-200},
+    hidden:{x:-100},
     }
   return (
     <>

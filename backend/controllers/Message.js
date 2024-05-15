@@ -9,7 +9,7 @@ export const Message = async (req, res) => {
       const { email,phone, Fname,Lname,message } = req.body
       let user = await messageModel.findOne({ email: email });
       if (user) {
-        return res.status(400).json({ error: "already sent message" });
+        return res.status(400).json({ error: "already sent message",result:false });
       }
   
    
@@ -24,7 +24,7 @@ export const Message = async (req, res) => {
   
   
   
-      res.json({ result:true,message:"message sent successful"});
+      // res.json({ result:true,message:"message sent successful"});
       
   
       /////////////////////////// sending mail to the user ////////////////////////////////////////////////////////////
@@ -68,7 +68,10 @@ export const Message = async (req, res) => {
         }
   
         main().catch(console.error);
+        // main().resolve(()=>{res.json({ result:true,message:"message sent successful"});})
       }
+       
+      res.json({ result:true,message:"message sent successful"});
     } catch (error) {
       console.log(error);
       res.status(500).json({ error: "Internal Server error" });
