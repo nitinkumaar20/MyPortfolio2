@@ -1,4 +1,4 @@
-import { React, useState, useRef,CSSProperties } from "react";
+import { React, useState, useRef, CSSProperties } from "react";
 import { Inputitem } from "./Inputitem";
 import { Message } from "../api/index";
 import { FaSquareInstagram } from "react-icons/fa6";
@@ -10,9 +10,7 @@ import emailjs from "@emailjs/browser";
 
 import ClipLoader from "react-spinners/ClipLoader";
 
-
 const Contact = () => {
-
   const [message, setMessage] = useState({
     Fname: "",
     Lname: "",
@@ -23,10 +21,9 @@ const Contact = () => {
   const [success, setSuccess] = useState(true);
   const [loadershow, setLoadershow] = useState(false);
 
-
   const form = useRef();
   const data = {
-    from_name: message.Fname +" "+ message.Lname,
+    from_name: message.Fname + " " + message.Lname,
     from_email: message.email,
     to_name: "Nitin kumar",
     messagdsd: message.message,
@@ -34,7 +31,10 @@ const Contact = () => {
   console.log(data);
   const sendEmail = (e) => {
     e.preventDefault();
-setLoadershow(true);
+    if(localStorage.getItem("email") != message.email || localStorage.getItem("email") === null){
+
+   
+    setLoadershow(true);
     emailjs
       .send("", "", data, {
         publicKey: "",
@@ -42,6 +42,7 @@ setLoadershow(true);
       .then(
         () => {
           console.log("SUCCESS!");
+          localStorage.setItem("email",message.email);
           setSuccess(false);
           toast("Message sent succeasful");
           setLoadershow(false);
@@ -50,15 +51,17 @@ setLoadershow(true);
           console.log("FAILED...", error.text);
           toast("FAILED", error.text);
           setLoadershow(false);
-
         }
       );
+    }else{
+      toast("FAILED already send message with this mail");
+
+    }
   };
 
   const onchange = (e) => {
     setMessage({ ...message, [e.target.name]: e.target.value });
   };
-  
 
   const variants = {
     visible: { x: 0 },
@@ -143,23 +146,22 @@ setLoadershow(true);
                   whileInView={{ y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.1 }}
-                  className={`btn-all ${loadershow ? 'd-none':""}`}
+                  className={`btn-all ${loadershow ? "d-none" : ""}`}
                   type="submit"
                   style={{ fontSize: "1rem" }}
                 >
                   Submit
                 </motion.button>
 
-       {/* ///////////////////////////////////////////// loader /////////////////////////////////////
-        */}
+                {/* ///////////////////////////////////////////// loader /////////////////////////////////////
+                 */}
                 <ClipLoader
-        color="#24fc03"
-        loading={loadershow}
-
-        size={50}
-        aria-label="Loading Spinner"
-        data-testid="loader"
-      />
+                  color="#24fc03"
+                  loading={loadershow}
+                  size={50}
+                  aria-label="Loading Spinner"
+                  data-testid="loader"
+                />
               </div>
             </motion.form>
           </div>

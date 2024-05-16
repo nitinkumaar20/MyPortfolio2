@@ -1,7 +1,5 @@
-// import React from "react";
-import banner1 from "../assets/images/banner.jpg";
-import banner2 from "../assets/images/banner2.jpg";
-import banner3 from "../assets/images/retouch.jpg";
+import React from "react";
+
 import { motion } from "framer-motion";
 
 const Portfolio = () => {

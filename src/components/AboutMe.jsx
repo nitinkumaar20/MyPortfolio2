@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion"
 
-import storyImg from '../assets/images/storyimg.png'
+// import storyImg from '../assets/images/storyimg.png'
 const AboutMe = () => {
   const variants = {
     visible:{x:0},
