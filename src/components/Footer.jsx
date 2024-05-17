@@ -13,18 +13,18 @@ const Footer = () => {
     <footer style={{padding:'2rem 10rem',overflow:'hidden'}} id='footer' >
 <div className='row' >
 <motion.div className='col-md-6' >
-    <h4>Get in Touch Social Links</h4>
-    <p>You can contact me in different social links given below. </p>
+    <h4 style={{fontWeight:'600'}}>Get in Touch Social Links</h4>
+    <h6>You can contact me in different social links given below. </h6>
     <motion.div className='d-flex gap-3' >
 
-<a href=""><motion.img initial={{y:50}} whileInView={{y:0,transition:2}} whileHover={{y:3}} viewport={{once:true}} transition={{duration:.1}} className='img-sz' src="https://drive.google.com/thumbnail?id=11frbUW4tMzluvv-Oov9CeDlM6ucBRTRP&sz=w1000" alt="error" /></a>
+<a href="https://www.instagram.com/nitinkumaar20/" target='_new'><motion.img initial={{y:50}} whileInView={{y:0,transition:2}} whileHover={{y:3}} viewport={{once:true}} transition={{duration:.1}} className='img-sz' src="https://drive.google.com/thumbnail?id=11frbUW4tMzluvv-Oov9CeDlM6ucBRTRP&sz=w1000" alt="error" /></a>
 
-<a href=""> 
+<a href="https://wa.me/" target='_new'> 
 
 <motion.img initial={{y:-50}} whileInView={{y:0,transition:2}}whileHover={{y:3}} viewport={{once:true}} transition={{duration:.1}} className='img-sz' src="https://drive.google.com/thumbnail?id=1a4VQwKu67oZOJz3L3MNXV-TLVkjv_kIp&sz=w1000" alt="error" />
 </a>
 
-<a href="">
+<a href="#">
 
 <motion.img initial={{y:50}} whileInView={{y:0,transition:2}} whileHover={{y:3}} viewport={{once:true}} transition={{duration:.1}} className='img-sz' src="https://drive.google.com/thumbnail?id=1DekEzod27E5i5I1yL3kVp4OWGbNW1zcG&sz=w1000" alt="error" />
 </a>

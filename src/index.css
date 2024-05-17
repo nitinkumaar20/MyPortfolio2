@@ -163,14 +163,11 @@ header nav {
 }
 #section-one #leftbox h3 {
   font-size: 1.7rem;
-  /* font-style: normal; */
   font-weight: 500;
-
   color: var(--mainColordark);
 }
 #section-one #leftbox p {
-  font-size: 0.9rem;
-
+  font-size: .9rem;
   font-weight: 400;
 }
 
@@ -690,6 +687,9 @@ font-size: 3rem;
 .responsive_nav a{
       /* gap: 1rem; */
       font-size: 10rem;
+    }
+    .quick-link{
+      margin-top: 2rem;
     }
 }
 

@@ -45,12 +45,12 @@ const AboutMe = () => {
         <div className="col-md-6 text-div" >
           <motion.div className="py-md-5 px-0 " initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}} transition={{duration:.5}} >
 
-          <motion.h3 initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}} transition={{duration:.7}}   style={{fontSize:'1.6rem',lineHeight:'1rem'}}>LET’S</motion.h3>
+          <motion.h3 initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}} transition={{duration:.7}}   style={{fontSize:'1.6rem',lineHeight:'1rem',fontWeight:'500'}}>LET’S</motion.h3>
 
-  <motion.h1 initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}} transition={{duration:.5}}  style={{fontSize:'2.1rem',lineHeight:'2rem',color:' #118868'}}>
+  <motion.h1 initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}} transition={{duration:.5}}  style={{fontSize:'2.1rem',lineHeight:'2rem',color:' #118868',fontWeight:'600'}}>
   INTRODUCE ABOUT</motion.h1>
 
-  <motion.h3 initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}} transition={{duration:.3}}  style={{fontSize:'1.8rem',lineHeight:'1rem'}}>
+  <motion.h3 initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}} transition={{duration:.3}}  style={{fontSize:'1.8rem',lineHeight:'1rem',fontWeight:'600'}}>
   MYSELF</motion.h3>
 
         <h6 style={{lineHeight:'1.7rem',padding:'2rem 0'}}>I am Nitin Kumar a Web Developer and Graphic Designer, I completed my B.Tech in Computer Science Engineering from the Phonics Group of Institutions.</h6>

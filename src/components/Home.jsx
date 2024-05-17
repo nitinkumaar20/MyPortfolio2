@@ -16,7 +16,7 @@ export const Home = () => {
 
         <motion.h3 initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}} transition={{duration:.7}}>Hi, I am</motion.h3>
 
-        <motion.h1 initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}}  transition={{duration:.5}}>NITIN KUMAR</motion.h1>
+        <motion.h1 initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}}  transition={{duration:.5}} >NITIN KUMAR</motion.h1>
         <motion.p initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}} transition={{duration:.3}}>Web Developer and Graphic Designer</motion.p>
 
 

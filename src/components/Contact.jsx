@@ -1,6 +1,6 @@
-import { React, useState, useRef, CSSProperties } from "react";
+import { React, useState, useRef } from "react";
 import { Inputitem } from "./Inputitem";
-import { Message } from "../api/index";
+
 import { FaSquareInstagram } from "react-icons/fa6";
 import { IoMdDoneAll } from "react-icons/io";
 import { motion } from "framer-motion";
