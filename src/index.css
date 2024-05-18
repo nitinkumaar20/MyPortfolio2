@@ -457,7 +457,7 @@ header nav::before {
 
 @media only screen and (max-width: 1024px) {
   html {
-    font-size: 62%;
+    font-size: 68%;
   }
 
   #section-one #rightbox img {
@@ -486,15 +486,15 @@ header nav::before {
   }
 }
 
-/* ////////////////////////// tablets ////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////// tablets ////////////////////////////////////////////////////////////// */
 
 @media only screen and (min-width: 481px) and (max-width: 769px) {
   html {
-    font-size: 38%;
+    font-size: 44%;
   }
-  /* /////////////////////////// portfolio //////////////////// */
+  /* ---------------------------- portfolio ----------------------------------------- */
   .services-heading2 h1{
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   #section-3 .services-box P{
@@ -508,19 +508,47 @@ header nav::before {
   #section-3 .services-box h2{
 font-size: 3rem;
   }
+
+  /* --------------------------- css for section-one -------------------------  */
+  #section-one #leftbox button{
+    font-size: 2.5rem;
+  }     
+  #section-one {
+    flex-direction: column;
+    padding: 0 5rem;
+
+    justify-content: center;
+    align-items: center;
+  }
+  #section-one #rightbox img {
+    max-width: 45rem;
+    max-height: 48rem;
+  }
   #section-one #leftbox {
+
     order: 2;
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+
+    width: 100%
   }
   #section-one #leftbox h3 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   #section-one #leftbox h1 {
-    font-size: 7rem;
-    line-height: 5rem;
+width: 70rem;
+     font-size: 10rem; 
+    line-height: 7rem;
+    /* width: 100vw; */
   }
   #section-one #leftbox p {
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+  #section-one #rightbox img {
+    max-width: 45rem;
+    max-height: 48rem;
   }
   #section-one #rightbox img {
     width: 49rem;
@@ -532,52 +560,95 @@ font-size: 3rem;
   #section-one::before {
     height: 67rem;
   }
-  .quick-link {
-    margin-top: 3rem;
+ 
+ 
+  /* --------------------------- css for section-2 -------------------------  */
+  #section-2{
+    padding: 0;
   }
-  #section-one {
-    flex-direction: column;
-    padding-top: 2rem;
+  #section-2 .text-div{
+    padding: 0 5rem;
+  }
+  
+  #section-2 .img-dev img{
+min-width: 40rem;
+height: 45rem;
   }
   .about-sec {
     padding: 0rem;
   }
   .text-div h6{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 
 
   }
   .text-div h6 span{
     font-size: 1.6rem;
   }
-  #section-one #rightbox img {
-    max-width: 45rem;
-    max-height: 48rem;
-  }
-  #section-2 .img-dev img {
-    max-width: 49rem;
-    max-height: fit-content;
-  }
+
+
   #section-2 .img-dev {
     justify-content: center;
   }
-  #section-2 .text-div {
-    justify-content: center;
-    align-items: center;
-    padding: 0 20rem;
-    padding-top: 5rem;
-  }
 
+ /* -----------------------------portfolio ---------------------------- */
+  #portfolio .services-box img{
+    min-height: 30rem;
+    min-width: 50rem;
+  }
+ /* -----------------------------portfolio ---------------------------- */
+
+ /* -----------------------------contact ---------------------------- */
+ #contact{
+  padding: 2rem 10rem;
+ }
+ #contact button{
+  font-size: 2.5rem;
+ }
+ #contact h1{
+  font-size: 2.9rem;
+ }
+.labl{
+  font-size: 2rem;
+}
+.inpt{
+  padding: .4rem 2rem;
+  outline:none;
+  border-radius:1rem;
+font-size: 1.3rem;
+}
+.labl-mess{
+  font-size: 2.5rem;
+}
+#message{
+  font-size: 1.5rem;
+  outline: none;
+  border-radius: 2rem;
+  margin-top: .5rem;
+}
   #section-3 .services-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  #section-one {
-    overflow: hidden;
-  }
+ /* -----------------------------footer ---------------------------- */
+ .foter h4{
+font-size: 3rem;
+ }
+ .logos{
+  padding-bottom: 3rem;
 
+ }
+ .foter h6{
+font-size: 2rem;
+
+ }
+ .quick-link, .our-services{
+  /* margin-top: 3rem; */
+  display: none;
+}
+/* ----------------------------------------------------- */
   .services-box div img {
     min-width: 25rem;
     min-height: 23rem;
@@ -586,16 +657,20 @@ font-size: 3rem;
     display: flex;
     flex-direction: column;
   }
-  #portfolio .services-box img {
-    min-width: 60rem;
-    min-height: 37rem;
-  }
-     /* /////////////////////////// navbar  //////////////////// */
+ 
+     /* ------------------ navbar  ------------------ */
      header .nav-close-btn{
       font-size: 10rem;
     }
+    header{
+      padding-top: 2rem ;
+    }
+    #logodiv a img{
+      height: 4rem;
+      width: 7rem;
+    }
     header .nav-btn{
-      
+      font-size: 4rem;
     }
 .responsive_nav a{
       /* gap: 1rem; */
@@ -605,15 +680,60 @@ font-size: 3rem;
 
 @media only screen and (max-width: 481px) {
   html {
-    font-size: 26%;
+    font-size: 25%;
   }
-    /* /////////////////////////// portfolio //////////////////// */
+    /* ---------------- portfolio ---------------------- */
     .services-heading2 h1{
       /* font-size: 2rem; */
     }
+    /* ---------------- section one ---------------------- */
+    #section-one{
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 5rem;
+      flex-direction: column;
+      
+
+    
+    }
+    #section-one::before{
+    min-height: 55rem;
+    }
   #section-one #rightbox img {
-    max-width: 45rem;
-    max-height: 48rem;
+    min-width: 35rem;
+    min-height: 33rem;
+  }
+  #section-one #leftbox {
+    order: 2;
+    padding-bottom: 5rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  #section-one #leftbox h1{
+    font-size: 7rem;
+    line-height: 6rem;
+  }
+  #section-one #leftbox h3{
+    font-size: 4rem;
+  }
+  #section-one #leftbox p{
+    font-size: 2rem;
+  }
+  #section-one #leftbox button a{
+    font-size: 2rem;
+  }
+  #section-one #leftbox {
+    order: 2;
+    padding-bottom: 5rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
   }
     /* /////////////////////////// about //////////////////// */
 
@@ -629,10 +749,7 @@ font-size: 3rem;
     padding: 0 20rem;
     padding-top: 5rem;
   }
-  #section-one #leftbox {
-    order: 2;
-    padding-bottom: 5rem;
-  }
+ 
   #section-one #rightbox img {
     width: 28rem;
     height: 30rem;
@@ -640,18 +757,8 @@ font-size: 3rem;
   #section-one #rightbox {
     order: 1;
   }
-  #section-one {
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 0rem;
-  }
-  #section-one {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 8rem;
-  }
+
+  
   .about-sec {
     padding: 0rem;
   }

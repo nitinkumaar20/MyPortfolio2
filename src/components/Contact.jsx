@@ -70,7 +70,7 @@ const Contact = () => {
   return (
     <>
       <ToastContainer />
-      <section style={{ padding: "2rem 16rem" }} id="contact">
+      <section  id="contact">
         {success ? (
           <div>
             <div className="div-center my-4">
@@ -119,7 +119,7 @@ const Contact = () => {
 
               <label
                 htmlFor="message"
-                style={{ fontSize: "1rem", marginTop: "1rem" }}
+                className="labl-mess"
               >
                 Message
               </label>
@@ -127,12 +127,7 @@ const Contact = () => {
                 id="message"
                 cols="30"
                 rows="5"
-                style={{
-                  fontSize: "1rem",
-                  outline: "none",
-                  borderRadius: "2rem",
-                  marginTop: ".5rem",
-                }}
+              
                 placeholder="Enter message"
                 name="message"
                 value={message.message}
@@ -148,7 +143,7 @@ const Contact = () => {
                   transition={{ duration: 0.1 }}
                   className={`btn-all ${loadershow ? "d-none" : ""}`}
                   type="submit"
-                  style={{ fontSize: "1rem" }}
+                  
                 >
                   Submit
                 </motion.button>

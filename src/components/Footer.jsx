@@ -15,7 +15,7 @@ const Footer = () => {
 <motion.div className='col-md-6' >
     <h4 style={{fontWeight:'600'}}>Get in Touch Social Links</h4>
     <h6>You can contact me in different social links given below. </h6>
-    <motion.div className='d-flex gap-3' >
+    <motion.div className='d-flex gap-3 logos' >
 
 <a href="https://www.instagram.com/nitinkumaar20/" target='_new'><motion.img initial={{y:50}} whileInView={{y:0,transition:2}} whileHover={{y:3}} viewport={{once:true}} transition={{duration:.1}} className='img-sz' src="https://drive.google.com/thumbnail?id=11frbUW4tMzluvv-Oov9CeDlM6ucBRTRP&sz=w1000" alt="error" /></a>
 

@@ -61,8 +61,8 @@ Create your feature branch:
 
 **6.License**
 This project is licensed under the MIT License. See the LICENSE file for details.
-**
-7.Contact**
+
+**7.Contact**
 If you have any questions or want to get in touch, you can reach me at:
 
 Email: nitink4800@gmail.com
