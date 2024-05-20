@@ -17,7 +17,7 @@ const Footer = () => {
     <h6>You can contact me in different social links given below. </h6>
     <motion.div className='d-flex gap-3 logos' >
 
-<a href="https://www.instagram.com/nitinkumaar20/" target='_new'><motion.img initial={{y:50}} whileInView={{y:0,transition:2}} whileHover={{y:3}} viewport={{once:true}} transition={{duration:.1}} className='img-sz' src="https://drive.google.com/thumbnail?id=11frbUW4tMzluvv-Oov9CeDlM6ucBRTRP&sz=w1000" alt="error" /></a>
+<a href="https://www.instagram.com/nitinkumaar20/" target='_new'><motion.img initial={{y:30}} whileInView={{y:0,transition:2}} whileHover={{y:3}} viewport={{once:true}} transition={{duration:.1}} className='img-sz' src="https://drive.google.com/thumbnail?id=11frbUW4tMzluvv-Oov9CeDlM6ucBRTRP&sz=w1000" alt="error" /></a>
 
 <a href="https://wa.me/" target='_new'> 
 
@@ -26,7 +26,7 @@ const Footer = () => {
 
 <a href="https://www.linkedin.com/in/nitink4800/" target='_new'>
 {/* https://drive.google.com/file/d/1yliVlKIY9U5xLCLgf-XfECBV-q1ByAMk/view?usp=sharing */}
-<motion.img initial={{y:50}} whileInView={{y:0,transition:2}} whileHover={{y:3}} viewport={{once:true}} transition={{duration:.1}} className='img-sz' src="https://drive.google.com/thumbnail?id=1yliVlKIY9U5xLCLgf-XfECBV-q1ByAMk&sz=w1000" alt="error" />
+<motion.img initial={{y:30}} whileInView={{y:0,transition:2}} whileHover={{y:3}} viewport={{once:true}} transition={{duration:.1}} className='img-sz' src="https://drive.google.com/thumbnail?id=1yliVlKIY9U5xLCLgf-XfECBV-q1ByAMk&sz=w1000" alt="error" />
 </a>
     </motion.div>
 </motion.div>

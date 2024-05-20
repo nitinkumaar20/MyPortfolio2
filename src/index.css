@@ -7,7 +7,7 @@
   box-sizing: border-box;
   /* font-family: "Allerta", sans-serif; */
   font-family: "Josefin Sans", sans-serif;
-  /* font-size: 62.5%; */
+
   scroll-behavior: smooth;
 }
 html {
@@ -499,6 +499,12 @@ font-size: 1.2rem;
 /* ////////////////////////////////////////////footer ////////////////////////////////////////// */
 
 /* ////////////////////////// responsive css here //////////////////////////////////////////// */
+
+@media only screen and (min-width: 1024px){
+  html {
+    font-size: 105%;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   html {
