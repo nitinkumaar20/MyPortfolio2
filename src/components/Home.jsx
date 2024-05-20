@@ -22,8 +22,9 @@ export const Home = () => {
 
         <motion.div initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}}  transition={{duration:.7}} style={{display:'flex',justifyContent:'flex-start',alignItems:'center',gap:'2rem'}}> 
 
-        <button><a  href="#contact">Hire Me</a></button>
-        <button><a  href="https://drive.google.com/file/d/15s67VXhiTF8GmoQAWUhlmz6IsAH7gTDV/view " target='_blank'>Resume</a></button>
+        <button><a  href="https://wa.me/" target='_blank'>Hire Me</a></button>
+
+        <button><a  href="https://drive.google.com/file/d/1nYL9RwKP3iNna6nISTLNiOUhVEKRRrzc/view " target='_blank'>Resume</a></button>
         </motion.div>
 
     </div>
