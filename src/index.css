@@ -168,7 +168,7 @@ header nav {
   line-height: 2.5rem;
 }
 #section-one #leftbox p {
-  font-size: .9rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -254,6 +254,7 @@ header nav::before {
   justify-content: flex-end;
   align-items: center;
 }
+
 #section-2 .img-dev img {
   margin-right: 2rem;
 }
@@ -261,6 +262,22 @@ header nav::before {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+#section-2 .text-div h1{
+  line-height: 1rem;
+  font-weight: 600;
+}
+#section-2 .text-div h6{
+  line-height: 1.3rem;
+}
+#section-2 .text-div .h6-1{
+  padding-bottom: 3.5rem;
+  padding-top: 1rem;
+
+}
+#section-2 .text-div .h3-MYSELF{
+  /* font-weight: 600; */
+  font-size: 2rem;
 }
 
 /* /////////////////////////////////////////// services ///////////////////////////////////////////////////// */
@@ -593,7 +610,7 @@ width: 70rem;
  
   /* --------------------------- css for section-2 -------------------------  */
   #section-2{
-    padding: 0;
+    padding: 0 5rem;
   }
   #section-2 .text-div{
     padding: 0 5rem;
@@ -606,16 +623,24 @@ height: 45rem;
   .about-sec {
     padding: 0rem;
   }
-  .text-div h6{
-    font-size: 1.6rem;
+  #section-2 .text-div h6{
+    font-size: 1.7rem;
+    line-height: 2rem;
+    padding: 1rem 0;
 
 
   }
-  .text-div h6 span{
-    font-size: 1.6rem;
+  #section-2 .text-div h1{
+    font-size: 3.2rem;
+    line-height: 1.5rem;
+    color:  #118868;
   }
-
-
+  #section-2 .text-div h3{
+    font-size: 2.2rem;
+  }
+  #section-2 .text-div .h3-MYSELF{
+    font-size: 3.3rem;
+  }
   #section-2 .img-dev {
     justify-content: center;
   }

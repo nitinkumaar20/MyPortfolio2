@@ -55,7 +55,7 @@ const AboutMe = () => {
 
         <h6 className="h6-1" >I am Nitin Kumar a Web Developer and Graphic Designer, I completed my B.Tech in Computer Science Engineering from the Phonics Group of Institutions.</h6>
 
-        <h6 className="h6-2"  >I have Experience in <span style={{lineHeight:'2rem',padding:'2rem 0,',color:'#10537a'}} > React, Node, MongoDB, JavaScript, HTML, CSS, and Bootstrap and PhotoShop.</span> And I love to create beautiful and efficient websites for my customers. I love going through the entire process with the customer from concept, to design and then development and launch.</h6>
+        <h6 className="h6-2"  >I have Experience in <span style={{color:'#10537a'}} > React, Node, MongoDB, JavaScript, HTML, CSS, and Bootstrap and PhotoShop.</span> And I love to create beautiful and efficient websites for my customers. I love going through the entire process with the customer from concept, to design and then development and launch.</h6>
 
       
   

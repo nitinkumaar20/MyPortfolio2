@@ -24,9 +24,9 @@ const Footer = () => {
 <motion.img initial={{y:-50}} whileInView={{y:0,transition:2}}whileHover={{y:3}} viewport={{once:true}} transition={{duration:.1}} className='img-sz' src="https://drive.google.com/thumbnail?id=1a4VQwKu67oZOJz3L3MNXV-TLVkjv_kIp&sz=w1000" alt="error" />
 </a>
 
-<a href="#">
-
-<motion.img initial={{y:50}} whileInView={{y:0,transition:2}} whileHover={{y:3}} viewport={{once:true}} transition={{duration:.1}} className='img-sz' src="https://drive.google.com/thumbnail?id=1DekEzod27E5i5I1yL3kVp4OWGbNW1zcG&sz=w1000" alt="error" />
+<a href="https://www.linkedin.com/in/nitink4800/" target='_new'>
+{/* https://drive.google.com/file/d/1yliVlKIY9U5xLCLgf-XfECBV-q1ByAMk/view?usp=sharing */}
+<motion.img initial={{y:50}} whileInView={{y:0,transition:2}} whileHover={{y:3}} viewport={{once:true}} transition={{duration:.1}} className='img-sz' src="https://drive.google.com/thumbnail?id=1yliVlKIY9U5xLCLgf-XfECBV-q1ByAMk&sz=w1000" alt="error" />
 </a>
     </motion.div>
 </motion.div>
