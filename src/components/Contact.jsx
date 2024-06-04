@@ -1,7 +1,7 @@
-import { React, useState, useRef } from "react";
+import {  useState, useRef } from "react";
 import { Inputitem } from "./Inputitem";
 
-import { FaSquareInstagram } from "react-icons/fa6";
+
 import { IoMdDoneAll } from "react-icons/io";
 import { motion } from "framer-motion";
 import { ToastContainer, toast } from "react-toastify";
@@ -36,8 +36,8 @@ const Contact = () => {
    
     setLoadershow(true);
     emailjs
-      .send("", "", data, {
-        publicKey: "",
+      .send("service_6kkexkl", "template_oxq00t8", data, {
+        publicKey: "hwTRRi5_o671mMGD9",
       })
       .then(
         () => {
@@ -63,10 +63,7 @@ const Contact = () => {
     setMessage({ ...message, [e.target.name]: e.target.value });
   };
 
-  const variants = {
-    visible: { x: 0 },
-    hidden: { x: -200 },
-  };
+
   return (
     <>
       <ToastContainer />
