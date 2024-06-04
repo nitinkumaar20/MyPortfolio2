@@ -1,7 +1,5 @@
 import {  useState, useRef } from "react";
 import { Inputitem } from "./Inputitem";
-
-
 import { IoMdDoneAll } from "react-icons/io";
 import { motion } from "framer-motion";
 import { ToastContainer, toast } from "react-toastify";
@@ -63,8 +61,7 @@ const Contact = () => {
     setMessage({ ...message, [e.target.name]: e.target.value });
   };
 
-
-
+ 
   return (
     <>
       <ToastContainer />

@@ -1,6 +1,6 @@
-
+import React from 'react'
 import { motion } from "framer-motion"
-
+import Navbar from './Navbar'
 
 export const Home = () => {
   const variants = {
@@ -22,7 +22,7 @@ export const Home = () => {
 
         <motion.div initial="hidden" variants={variants} whileInView="visible" viewport={{once:true}}  transition={{duration:.7}} style={{display:'flex',justifyContent:'flex-start',alignItems:'center',gap:'2rem'}}> 
 
-        <button><a  href="https://wa.me/6396200378" target='_blank'>Hire Me</a></button>
+        <button><a  href="https://wa.me/" target='_blank'>Hire Me</a></button>
 
         <button><a  href="https://drive.google.com/file/d/1nYL9RwKP3iNna6nISTLNiOUhVEKRRrzc/view " target='_blank'>Resume</a></button>
         </motion.div>
@@ -33,7 +33,7 @@ export const Home = () => {
     {/* <!-- right side section  ------------> */}
     <motion.div id="rightbox" >
 
-        <motion.img src="https://drive.google.com/thumbnail?id=1m5dKHwQ4hsymrDNcel-NqtqU0fPA0f-e&sz=w1000" initial={{scale:.7}} animate={{scale:1}} transition={{duration:.8}}   whileTap={{ scale: 1.1 }} alt="error"/>
+        <motion.img src="https://drive.google.com/thumbnail?id=1m5dKHwQ4hsymrDNcel-NqtqU0fPA0f-e&sz=w1000" initial={{scale:0.5}} animate={{scale:1}} transition={{duration:.5}}   whileTap={{ scale: 1.1 }} alt="error"/>
       
         
     </motion.div>
