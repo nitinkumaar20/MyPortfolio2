@@ -61,7 +61,7 @@ export const Home = () => {
 
             <button>
               <a
-                href="https://drive.google.com/file/d/1nYL9RwKP3iNna6nISTLNiOUhVEKRRrzc/view "
+                href="https://drive.google.com/file/d/1zPmnn8iWWs65JJsfPhhZtZbPcu7DiuoU/view?usp=sharing"
                 target="_blank"
               >
                 Resume

@@ -61,13 +61,15 @@ nav a {
   font-weight: 300;
   color: var(--textColor);
   text-decoration: none;
-  color: var(--secondaryColor);
+  color: var(--mainColordark);
 
   font-weight: bold;
 }
 
 nav a:hover {
   color: rgb(216, 164, 51);
+  /* color:#2c0101; */
+
   transition: 0.3s;
 }
 
@@ -91,6 +93,7 @@ header nav {
   header .nav-btn {
     visibility: visible;
     opacity: 1;
+    color: var(--mainColordark);
   }
 
   header nav {
@@ -199,10 +202,11 @@ header nav {
   background-color: var(--mainColordark);
 
   color: var(--textColor);
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 20px 30px, rgba(0, 0, 0, 0.23) 0px 2px 2px;
 }
 #section-one #leftbox button:hover {
   background-color: var(--HoverColor);
+  /* background-color:#023125; */
 }
 #section-one::before {
   content: "";
@@ -282,6 +286,7 @@ header nav::before {
 #section-2 .text-div h1 {
   line-height: 1rem;
   font-weight: 600;
+  color: var(--mainColordark);
 }
 #section-2 .text-div h6 {
   line-height: 1.3rem;
