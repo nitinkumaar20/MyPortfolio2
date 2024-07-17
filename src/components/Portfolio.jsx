@@ -1,11 +1,16 @@
-import React from "react";
-
 import { motion } from "framer-motion";
 
 const Portfolio = () => {
   return (
     <section
-      style={{ padding: "0 10rem", overflow: "hidden" ,display:'flex',flexDirection:'column',alignItems:'center',paddingBottom:'2rem'}}
+      style={{
+        padding: "0 10rem",
+        overflow: "hidden",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        paddingBottom: "2rem",
+      }}
       id="portfolio"
     >
       <div className="section-heading">
@@ -24,14 +29,14 @@ const Portfolio = () => {
         {/* </marquee> */}
       </div>
 
-      <div class="services-heading2 ">
+      <div className="services-heading2 ">
         <motion.h1
           initial={{ y: 200 }}
           whileInView={{ y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Here's my past projects
+        {"here's"} my past projects
         </motion.h1>
       </div>
 
@@ -47,14 +52,18 @@ const Portfolio = () => {
           transition={{ duration: 0.5 }}
         >
           <img
-            style={{ width: "27rem", height: "14rem", }}
+            style={{ width: "27rem", height: "14rem" }}
             src="https://drive.google.com/thumbnail?id=1CxsngU4qWCbr_BdMoVDrChUO4YM7sNNa&sz=w1000"
             alt="error"
           />
           <a
             href="https://nitinkumaar20.github.io/Quiz.github.io/"
             target="_port"
-            style={{ textDecoration: "none", color: "white", fontSize: ".5rem" }}
+            style={{
+              textDecoration: "none",
+              color: "white",
+              fontSize: ".5rem",
+            }}
           >
             {" "}
             <h3
@@ -62,7 +71,6 @@ const Portfolio = () => {
               style={{
                 cursor: "pointer",
                 objectFit: "cover",
-            
               }}
             >
               <p className="text-danger h3">Quiz App</p> Preview
@@ -71,7 +79,7 @@ const Portfolio = () => {
         </motion.div>
         <div className="main ">
           <img
-            style={{width: "27rem", height: "14rem", }}
+            style={{ width: "27rem", height: "14rem" }}
             src="https://drive.google.com/thumbnail?id=1HAa4HUeI_OD_ujk9nO-94_YharlrVsqq&sz=w1000"
             alt="error"
           />
@@ -86,8 +94,6 @@ const Portfolio = () => {
               style={{
                 objectFit: "cover",
                 cursor: "pointer",
-          
-              
               }}
             >
               <p className="text-danger h5">Student Registartion portal</p>
@@ -103,7 +109,7 @@ const Portfolio = () => {
           transition={{ duration: 0.5 }}
         >
           <img
-            style={{width: "27rem", height: "14rem", padding: "0" }}
+            style={{ width: "27rem", height: "14rem", padding: "0" }}
             src="https://drive.google.com/thumbnail?id=1TzOshuawxN_ZAs95c-_Es0V3F_PS6uiA&sz=w1000"
             alt="error"
           />
@@ -118,7 +124,6 @@ const Portfolio = () => {
               className="prev"
               style={{
                 cursor: "pointer",
-        
               }}
             >
               {" "}
@@ -139,7 +144,7 @@ const Portfolio = () => {
           transition={{ duration: 0.5 }}
         >
           <img
-            style={{width: "27rem", height: "14rem"}}
+            style={{ width: "27rem", height: "14rem" }}
             src="https://drive.google.com/thumbnail?id=1740pj7IKCb8oQoBK_VCy5zqZZ49VoY_y&sz=w1000"
             alt="error"
           />
@@ -155,7 +160,6 @@ const Portfolio = () => {
               style={{
                 cursor: "pointer",
                 color: "white",
-        
               }}
             >
               <p className="text-danger h3">Graphic Design Work</p>Preview
@@ -165,7 +169,7 @@ const Portfolio = () => {
 
         <div className="main">
           <img
-            style={{width: "27rem", height: "14rem"}}
+            style={{ width: "27rem", height: "14rem" }}
             src="https://drive.google.com/thumbnail?id=10mxGGY9y-VAJx2SA_WcPGubZYpu_A9UD&sz=w1000"
             alt="error"
           />
@@ -180,7 +184,6 @@ const Portfolio = () => {
               style={{
                 cursor: "pointer",
                 color: "white",
-           
               }}
             >
               <p className="text-danger h3">Graphic Design Work</p>Preview
@@ -196,7 +199,7 @@ const Portfolio = () => {
           transition={{ duration: 0.5 }}
         >
           <img
-            style={{width: "27rem", height: "14rem" }}
+            style={{ width: "27rem", height: "14rem" }}
             src="https://drive.google.com/thumbnail?id=1hLCkErZvMcsEBsNA7iPxH0yLsXTR4iBo&sz=w1000&sz=w1000"
             alt="error"
           />
@@ -211,7 +214,6 @@ const Portfolio = () => {
               style={{
                 cursor: "pointer",
                 color: "white",
-                
               }}
             >
               <p className="text-danger h3">Graphic Design Work</p>Preview
