@@ -46,11 +46,15 @@ header {
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
     backdrop-filter: blur(10px); /* Blur effect */
 height: auto;
+border-bottom: .1px solid rgb(199, 198, 198);
+    
   }
 }
 .header-bg-blurr {
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
   backdrop-filter: blur(10px); /* Blur effect */
+  border-bottom: .1px solid rgb(199, 198, 198);
+
 }
 
 #logodiv a img {
@@ -59,9 +63,10 @@ height: auto;
 nav a {
   margin: 0 1rem;
   font-weight: 300;
-  color: var(--textColor);
+
   text-decoration: none;
   color: var(--mainColordark);
+  /* color: #e6de7b; */
 
   font-weight: bold;
 }

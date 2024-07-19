@@ -91,6 +91,7 @@ const Navbar = () => {
         </button>
       </nav>
     </header>
+      // <hr style={{display:scrollCls ?'':'none'}} />
   );
 };
 
