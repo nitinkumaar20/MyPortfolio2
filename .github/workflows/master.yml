@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master  # Trigger the workflow on push to the master branch
+      - master
 
 jobs:
   build-and-deploy:
@@ -13,10 +13,15 @@ jobs:
     - name: Checkout the repository
       uses: actions/checkout@v2
 
+    - name: Configure git
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '16'  # Specify the Node.js version you are using
+        node-version: '16'
 
     - name: Install dependencies
       run: npm install
@@ -24,9 +29,12 @@ jobs:
     - name: Build the project
       run: npm run build
 
+    - name: Debug: List files in the build directory
+      run: ls -la ./build
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: gh-pages  # Deploy to the gh-pages branch
-        publish_dir: ./build  # Adjust this if your build directory is different
+        publish_branch: gh-pages
+        publish_dir: ./build
